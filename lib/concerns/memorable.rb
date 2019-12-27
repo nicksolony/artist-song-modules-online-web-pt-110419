@@ -9,8 +9,10 @@ module Memorable
     end
   end
   
-   def initialize
+  module InstantMethods
+    def initialize
       self.class.all << self
+    end
   end
 
 
